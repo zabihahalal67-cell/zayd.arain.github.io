@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zayd's World - Cars, Faith & Sports</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #e3f2fd, #ffffff);
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(120deg, #0f2e5c, #1f88b4);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      letter-spacing: 1px;
+    }
+
+    .tagline {
+      font-style: italic;
+      margin-top: 10px;
+      color: #e0e0e0;
+    }
+
+    nav {
+      background: #122943;
+      color: white;
+      display: flex;
+      justify-content: center;
+      gap: 35px;
+      padding: 15px 0;
+      transition: background 0.4s;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.05em;
+      position: relative;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: #00bcd4;
+      transition: width 0.3s;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    section {
+      background: white;
+      margin: 40px auto;
+      max-width: 900px;
+      padding: 35px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    section:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+
+    h2 {
+      color: #0f2e5c;
+      border-left: 5px solid #1f88b4;
+      padding-left: 10px;
+      margin-top: 0;
+    }
+
+    .cat-pic {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 18px;
+      transition: transform 0.3s;
+    }
+
+    .cat-pic:hover {
+      transform: scale(1.03);
+    }
+
+    .project-list {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .project-list li {
+      margin-bottom: 10px;
+      font-size: 1.05em;
+      padding-left: 5px;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    input, textarea, button {
+      font-family: inherit;
+      font-size: 1em;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    button {
+      background-color: #1f88b4;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #166c8f;
+    }
+
+    .contacts a {
+      margin-right: 20px;
+      color: #1f88b4;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contacts a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #0f2e5c;
+      color: white;
+      font-size: 0.95em;
+    }
+
+    @media (max-width: 600px) {
+      nav { flex-wrap: wrap; gap: 15px; }
+      section { padding: 20px; margin: 20px 10px; }
+      header h1 { font-size: 1.8em; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to Zayd's World</h1>
+    <div class="tagline">"Faith, passion, and speed — all driving me forward."</div>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>Home</h2>
+    <p>Salaam and welcome! I'm Zayd, and this site shares a glimpse into my world — a mix of faith, cars, Quran recitation, cats, and sports like football and basketball. You'll find what drives me every day and what inspires me to keep moving forward.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm a Muslim student from New York who finds joy and purpose in combining faith with passion. I love cars and how engineering transforms them into machines of speed and efficiency. I often listen to Quran recitations that bring focus and calmness. I also admire street cats — they wander near my home and remind me to stay curious and at peace. During my free time, I play football or basketball and learn about new technologies.</p>
+    <img src="https://res.cloudinary.com/petrescue/image/upload/c_crop,g_custom/v1598315017/ul4uxmbk6nzyg0662920.jpg" alt="Cats on the street" class="cat-pic">
+  </section>
+
+  <section id="projects">
+    <h2>Projects / Skills / Interests</h2>
+    <p>Here are a few things I’ve been learning and enjoying lately:</p>
+    <ul class="project-list">
+      <li>🚗 Exploring how car engines and electric vehicles work</li>
+      <li>📖 Improving my Quran recitation through tajweed practice</li>
+      <li>⚽ Playing football and basketball at school</li>
+      <li>💻 Learning about new car technologies and design tools</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Interested in connecting over shared passions for cars, faith, or sports? Let’s get in touch below.</p>
+    <div class="contacts">
+      <a href="mailto:zaydstudent@email.com">Email</a>
+      <a href="https://www.linkedin.com/in/zaydstudent" target="_blank">LinkedIn</a>
+      <a href="https://github.com/zaydstudent" target="_blank">GitHub</a>
+    </div>
+    <form>
+      <label>Name:</label>
+      <input type="text" name="name" placeholder="Your name">
+      <br><br>
+      <label>Email:</label>
+      <input type="email" name="email" placeholder="Your email">
+      <br><br>
+      <label>Message:</label>
+      <textarea name="message" rows="5" placeholder="Write your message..."></textarea>
+      <br><br>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Zayd's World | Made with curiosity and creativity
+  </footer>
+</body>
+</html>
